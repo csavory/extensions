@@ -1,0 +1,27 @@
+{
+  "id": "default-uuid-value",
+  "name": "Default uuid for a field",
+  "srcdoc": "extension.html",
+  "fieldTypes": [
+    "Symbol"
+  ],
+  "parameters": {
+    "instance": [
+      {
+        "id": "defaultUUID",
+        "name": "Default UUID",
+        "description": "Set uuid",
+        "type": "Enum",
+        "options": [
+          {
+            "Random UUID": "Random UUID"
+          }
+        ],
+        "labels": {
+          "empty": "Choose"
+        },
+        "required": true
+      }
+    ]
+  }
+}

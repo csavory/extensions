@@ -1,0 +1,30 @@
+{
+  "id": "default-boolean-value",
+  "name": "Default boolean for a field",
+  "srcdoc": "extension.html",
+  "fieldTypes": [
+    "Symbol"
+  ],
+  "parameters": {
+    "instance": [
+      {
+        "id": "defaultBoolean",
+        "name": "Default boolean",
+        "description": "Set which value is the default boolean",
+        "type": "Enum",
+        "options": [
+          {
+            "true": "true"
+          },
+          {
+            "false": "false"
+          }
+        ],
+        "labels": {
+          "empty": "Choose a value"
+        },
+        "required": true
+      }
+    ]
+  }
+}
