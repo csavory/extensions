@@ -26,15 +26,11 @@
 			inputEl.addEventListener( 'input', keyboardInputHandler );
 			window.addEventListener( 'onbeforeunload', unloadHandler );
 
-			var defaultBoolean = extension.parameters.instance.defaultBoolean;
-			var defaultBooleanText = document.createTextNode( defaultBoolean || 'none' );
-			document.querySelector( '.default-value' ).appendChild( defaultBooleanText );
-
 			var isNewlyCreated = extension.entry.getSys().version < 2;
 			var hasNoValue = typeof extension.field.getValue() === 'undefined';
 
 			if ( isNewlyCreated && hasNoValue ) {
-				extension.field.setValue( defaultBoolean || '' );
+				extension.field.setValue( false || '' );
 			}
 
 			function valueChangeHandler( value ) {
