@@ -18,6 +18,12 @@
           },
           {
             "false": "false"
+          },
+          {
+            "Yes": "Yes"
+          },
+          {
+            "No": "No"
           }
         ],
         "labels": {
